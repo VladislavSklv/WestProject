@@ -1,4 +1,92 @@
 .promo{
-    min-height: 900px;
+    min-height: 100vh;
     background: url('../img/bg1.jpg') center center/cover no-repeat ;
+    padding-top: 37px;
+    &__wrapper{
+        width: 600px;
+        margin-top: 45px;
+    }
+    &__h1{
+        font-family: 'Manrope', sans-serif;
+        font-weight: 300;
+        font-size: 45px;
+        line-height: 61px;
+        color: #fff;
+        span{
+            font-weight: 500;
+        }
+    }
+    &__h2{
+        display: flex;
+        align-items: center;
+        font-family: 'Manrope', sans-serif;
+        font-weight: 300;
+        font-size: 30px;
+        line-height: 30px;
+        color: #fff;
+        &::before{
+            content: '';
+            display: inline-block;
+            height: 8px;
+            width: 8px;
+            border: 1px outset #fff;
+            border-radius: 100%;
+            margin: 7px 15px 0 5px;
+        }
+    }
+    &-h2__wrapper{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 15px;
+        &::before{
+            content: '';
+            display: inline-block;
+            height: 8px;
+            width: 8px;
+            border: 1px outset #fff;
+            border-radius: 100%;
+            margin-top: 7px;
+        }
+    }
+    &__text{
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 140%;
+        color: #fff;
+        margin: 25px 0 25px 40px;
+    }
+    &__button{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 260px;
+        height: 71px;
+        background: linear-gradient(180deg, #F2E0A9 0%, #E8CD80 100%);
+        border: none;
+        box-shadow: inset 0px 10px 10px rgba(255, 255, 255, .25);
+        border-radius: 5px;
+        transform: skewX();
+        color: #756532;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 15px;
+        font-weight: 700;
+        cursor: pointer;
+        &::before{
+            content: " ";
+            display: block;
+            height: 60px;
+            width: 5px;
+            background-color: red;
+        }
+        &::after{
+            content: " ";
+            display: block;
+            height: 60px;
+            width: 5px;
+            background-color: red;
+        }
+    }
 }

@@ -1,11 +1,14 @@
+@import 'libs/fonts';
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'OpenSans', sans-serif;
 }
 .container{
-    max-width: 1160px;
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 @import 'blocks/promo';
 @import 'blocks/header';
